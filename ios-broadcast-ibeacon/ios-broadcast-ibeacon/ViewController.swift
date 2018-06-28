@@ -49,9 +49,18 @@ class ViewController: UIViewController, CBPeripheralManagerDelegate {
         case .poweredOff:
             print(".poweredOff")
             peripheral.stopAdvertising()
-        default:
-            print("default")
-            peripheral.stopAdvertising()
+        case .resetting:
+            print(".resetting")
+            // Do something
+        case .unauthorized:
+            print(".unauthorized")
+            // Do something
+        case .unknown:
+            print(".unknown")
+            // Do something
+        case .unsupported:
+            print(".unsupported")
+            // Do something
         }
     }
 
