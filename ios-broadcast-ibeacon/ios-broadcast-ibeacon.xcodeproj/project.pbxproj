@@ -22,6 +22,8 @@
 		5BD1D61220E45A4A00E2020E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5BD1D61520E45A4A00E2020E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5BD1D61720E45A4A00E2020E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BD1D61E20E462CD00E2020E /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		5BD1D62020E462D700E2020E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 			children = (
 				5BD1D60A20E45A4A00E2020E /* ios-broadcast-ibeacon */,
 				5BD1D60920E45A4A00E2020E /* Products */,
+				5BD1D61D20E462CD00E2020E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +65,15 @@
 				5BD1D61720E45A4A00E2020E /* Info.plist */,
 			);
 			path = "ios-broadcast-ibeacon";
+			sourceTree = "<group>";
+		};
+		5BD1D61D20E462CD00E2020E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5BD1D62020E462D700E2020E /* CoreLocation.framework */,
+				5BD1D61E20E462CD00E2020E /* CoreBluetooth.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,7 +287,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "ios-broadcast-ibeacon/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.ios-broadcast-ibeacon";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -289,7 +303,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "ios-broadcast-ibeacon/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.ios-broadcast-ibeacon";
 				PRODUCT_NAME = "$(TARGET_NAME)";
